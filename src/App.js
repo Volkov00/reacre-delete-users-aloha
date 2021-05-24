@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Aloha from "./components/Aloha/Aloha";
+import React from "react";
+import AlohaDashboard from "./components/AlohaDashboard";
+import AlohaList from "./components/AlohaList/index";
+import SortedAlohaList from "./components/AlohaSorted/index";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  /* return (
+    <>
+      <Aloha name="Mark" />
+      <Aloha name="Andry" />
+      <Aloha />
+    </>
+  );*/
+  return <AlohaDashboard />;
 }
 
 export default App;
